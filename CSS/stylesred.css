@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
+
+
+:root{
+    --bg-body : #510000;
+    --primary-color : #ff7700;
+    --fontSize-title: 40px;
+    --fontSize-parrafos: 20px; 
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Bungee Inline', cursive;
+}
+p,a,li,input{
+    font-family:'JetBrains Mono', monospace;
+   
+}
+
+body{
+    background: var(--bg-body);
+}
+
+header{
+    padding-top: 180px;
+}
+
+
+nav.bg-portmenu{
+    background: var(--bg-body);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    top: 0px;
+    background: #230101;
+}
+
+nav .navbar-brand img{
+    width: 200px;
+}
+
+nav.bg-portmenu ul li{
+margin-top: 14px;
+margin-left: 50px
+}
+
+nav.bg-portmenu ul li a{
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+
+nav.bg-portmenu ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+
+nav.bg-portmenu ul li a:hover{
+  color: var(--primary-color);
+}
+
+nav.bg-portmenu ul li a:hover::after{
+    background: var(--primary-color);
+    width: 40%;
+}
+
+#hero{
+    padding: 160px 0;
+ }
+
+#hero .cont-foto{
+  position: relative;
+  width: 400px;
+}
+
+#hero .cont-foto img{
+    z-index: 2;
+    position: relative;
+    width: 450px;
+}
+
+#hero .cont-foto::before{
+    width: 450px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    background: #fb4141;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+#hero .cont-info{
+    padding-left: 60px;
+}
+
+#hero .cont-info h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 800;
+ 
+}
+
+#hero .cont-info p{
+    color: #c6c6c6;
+    font-size: 25px;
+}
+
+
+
+#sobremi{
+    padding: 160px 0;
+}
+
+#sobremi .cont-foto{
+  position: relative;
+  width: 400px;
+}
+
+#sobremi .cont-foto img{
+    z-index: 2;
+    position: relative;
+    width: 450px;
+}
+
+#sobremi .cont-foto::before{
+    width: 450px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    background: #fb4141;
+    z-index: 1;
+    border-radius: 300px;
+}
+
+#sobremi .cont-info{
+    padding-left: 60px;
+}
+
+#sobremi .cont-info h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 800;
+ 
+}
+
+#sobremi .cont-info p{
+    color: #c6c6c6;
+    font-size: 20px;
+}
+
+
+
+
+
+#proyectos{
+    padding: 160px 0;
+}
+
+#proyectos .cont-foto{
+  position: relative;
+  width: 450px;
+}
+
+#proyectos .cont-foto img{
+    z-index: 2;
+    position: relative;
+    width: 450px;
+}
+
+#proyectos .cont-info{
+    padding-left: 60px;
+}
+
+#proyectos .cont-info h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 800;
+ 
+}
+
+
+#proyectos .cont-info p{
+    color: #c6c6c6;
+    font-size: 20px;
+}
+
+
+
+#habilidades{
+    padding: 160px 0;
+}
+
+
+#habilidades .cont-title h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+#habilidades .alinear1, .alinear2, .alinear3, .alinear4{
+    width: 110px;
+    height: 110px;
+    margin-right:20px;
+    margin-top: 100px;
+    margin-left: 80px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+#habilidades .alinear1:hover, .alinear2:hover, .alinear3:hover, .alinear4:hover{
+    transform: scale(2.2);
+}
+
+
+#habilidades .alinear5,.alinear6,.alinear7,  .alinear8{
+    width: 110px;
+    height: 110px;
+    margin-right:20px;
+    margin-top: 100px;
+    margin-left: 80px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+#habilidades .alinear5:hover, .alinear6:hover, .alinear7:hover, .alinear8:hover{
+    transform: scale(2.2);
+}
+
+#habilidades .alinear9, .alinear10, .alinear11,.alinear12 {
+    width: 110px;
+    height: 110px;
+    margin-right:20px;
+    margin-top: 100px;
+    margin-left: 80px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+#habilidades .alinear9:hover, .alinear10:hover, .alinear11:hover, .alinear12:hover{
+    transform: scale(2.2);
+}
+
+#habilidades .alinear13, .alinear14, .alinear15, .alinear16{
+    width: 110px;
+    height: 110px;
+    margin-right:20px;
+    margin-top: 100px;
+    margin-left: 80px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+#habilidades .alinear13:hover, .alinear14:hover, .alinear15:hover, .alinear16:hover{
+    transform: scale(2.2);
+}
+.skills1, .skills2, .skills3, .skills4{
+    margin-left: 180px;
+}
+
+
+
+#contactame{
+    padding: 160px 0;
+}
+
+
+#contactame .cont-title h1{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#contactame .github, .facebook, .whatsapp, .gmail, .tiktok{
+    width: 110px;
+    height: 110px;
+    margin-right:20px;
+    margin-top: 100px;
+    margin-left: 80px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+
+#contactame .github:hover, .facebook:hover, .gmail:hover, .whatsapp:hover, .tiktok:hover{
+    transform: scale(2.2);
+}
+
+#contactame .youtube, .instagram, .linkedin, .telegram, .snapchat{
+    width: 110px;
+    height: 110px;
+    margin-right:20px;
+    margin-top: 100px;
+    margin-left: 80px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+
+
+
+#contactame .instagram:hover, .telegram:hover, .linkedin:hover, .youtube:hover, .snapchat:hover{
+    transform: scale(2.2);
+}
+
+.redes1, .redes2{
+    margin-left: 90px;
+    margin-right: 50px;
+}
+footer{
+    padding: 30px;
+    background: #230101;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+footer img{
+    width: 120px;
+    padding-bottom: 10px;
+}
+
+
+.tema-color{
+
+    position:fixed;
+    right: 0;
+    top: 300px;
+    z-index: 99;
+    background-color: transparent;
+}
+
+.cont-colores{
+    width: 100px;
+    padding: 30px;
+    background:#fb4141;
+    position: absolute;
+    right: -100px;
+    transition: 1s;
+    top: -64px;
+    border-radius: 10px;
+}
+
+.cont-colores button{
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: transparent;
+    border-radius: 40px;
+    margin: 10px auto;
+}
+
+.cont-colores button:nth-child(1){
+    background:#1A1A1A;
+}
+
+.cont-colores button:nth-child(2){
+    background:rgb(112, 0, 0);
+}
+
+.cont-colores button:nth-child(3){
+    background:rgb(1, 1, 147);
+}
+
+.cont-colores.active{
+    right: 0;
+}
+
+.open-panel{
+    background: #7f0000;
+    color: #ffffff;
+    padding: 12px 50px;
+    transform: rotate(-90deg);
+    position: relative;
+    right:  -64px;;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.open-panel.active{
+    right: 37px;
+
+}
+
+@media screen and (min-width:320px) and (max-width:990px){
+    
+ 
+    
+    header nav button.navbar-toggler{
+        background: var(--primary-color);
+    }
+
+
+    #hero{
+        text-align: center;
+    }
+
+    #hero .cont-foto{
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    #hero .cont-foto::before{
+        left: 10px;
+    }
+
+
+    #sobremi h1 p{
+        margin-left: 15px;
+    }
+
+
+    #sobremi .cont-foto{
+        width: 100%;
+    }
+
+    #sobremi .cont-foto::before{
+        left: 10px;
+    }
+
+
+    #proyectos p{
+        margin-left: 15px;
+    }
+
+    #proyectos h1{
+        margin-right: 10px;
+    }
+
+
+    #proyectos .cont-foto{
+        width: 100%;
+    }
+
+    #proyectos .cont-foto::before{
+        left: 0;
+    }
+
+
+
+    #habilidades .alinear1, .alinear2, .alinear3, .alinear4 {
+        margin-left: 0;
+        margin-right: 5;
+    }
+
+
+    #habilidades .alinear5,.alinear6,.alinear7, .alinear8{
+        margin-left: 0;
+        margin-right: 5;
+    }
+
+
+    #habilidades .alinear9, .alinear10, .alinear11,.alinear12{
+        margin-left: 0;
+        margin-right: 5;
+    }
+
+    #habilidades .alinear13, .alinear14, .alinear15, .alinear16{
+        margin-left: 0;
+        margin-right: 5;
+    }
+
+    .skills1, .skills2, .skills3, .skills4{
+        margin-left: 90px;
+    }
+    
+    
+
+    #contactame .github,.facebook, .whatsapp, .gmail, .tiktok {
+        margin-left: 0;
+        margin-right: 10;
+    }
+
+    #contactame .youtube, .instagram, .linkedin, .telegram, .snapchat {
+        margin-left: 0;
+        margin-right: 10;
+    }
+
+    .redes1{
+        margin-left: 90px;
+    }
+
+
+    .redes2{
+        margin-bottom: 50px;
+    }
+
+  
+    
+
+    footer{
+        width: 1000px;
+    }
+}
